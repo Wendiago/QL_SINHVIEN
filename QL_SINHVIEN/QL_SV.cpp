@@ -160,7 +160,7 @@ void QL_SV::readFileToList(char* filename)
             token = strtok(NULL, ",");
             midtermMark = atof(token);
 
-            token = strtok(NULL, "\n");
+            token = strtok(NULL, ",");
             finaltermMark = atof(token);
 
             Student s(name, id, dateOfBirth, exerciseMark, midtermMark, finaltermMark);
